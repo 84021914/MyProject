@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.tests.SignInTest">
+        <methods>
+          <include name="gotoSignUP"/>
+          <include name="initialSetUp"/>
+          <include name="tearDown"/>
+          <include name="shouldThrowAnErrorIfSignInDetailsAreMissing"/>
+        </methods>
+      </class> <!-- com.tests.SignInTest -->
+      <class name="com.tests.FlightBookingTest">
+        <methods>
+          <include name="testThatResultsAppearForAOneWayJourney"/>
+          <include name="initialSetUp"/>
+          <include name="tearDown"/>
+          <include name="m"/>
+        </methods>
+      </class> <!-- com.tests.FlightBookingTest -->
+      <class name="com.tests.HotelBookingTest">
+        <methods>
+          <include name="initialSetUp"/>
+          <include name="gotoSignUP"/>
+          <include name="shouldBeAbleToSearchForHotels"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tests.HotelBookingTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
