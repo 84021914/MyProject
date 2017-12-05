@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
+<listeners>
+		<listener class-name="com.tests.ExtentReporterNG" />
+	</listeners>
+  <test name="Test1">
     <classes>
-      <class name="com.tests.HotelBookingTest"/>
-      <class name="com.tests.FlightBookingTest"/>
-      <class name="com.tests.SignInTest"/>
+    
+    	<class name="com.tests.SignInTest"/>
+    	
+     
+      
     </classes>
   </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+    
+    	
+      <class name="com.tests.HotelBookingTest"/>
+     
+      
+    </classes>
+  </test>
+  <test name="Test3">
+    <classes>
+    
+    
+      <class name="com.tests.HotelBookingTest"/>
+     
+      
+    </classes>
+  </test>
+  
 </suite> <!-- Suite -->

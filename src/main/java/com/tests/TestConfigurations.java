@@ -11,7 +11,7 @@ import com.sun.javafx.PlatformUtil;
 public class TestConfigurations 
 {
 	
-	public WebDriver driver;
+	public static  WebDriver driver;
 	 private void setDriverPath() {
 	        if (PlatformUtil.isMac()) {
 	            System.setProperty("webdriver.chrome.driver", "chromedriver");
@@ -35,7 +35,9 @@ public class TestConfigurations
 	 }
 	 @AfterTest
 	 public void tearDown() {
+		 driver.close();
 		 driver.quit();
+		
 	 }
 
 }

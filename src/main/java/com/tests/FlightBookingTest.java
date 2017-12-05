@@ -17,7 +17,7 @@ public class FlightBookingTest extends TestConfigurations {
 	@BeforeMethod
 	public void m()
 	{
-		f1= new  FlightPageObject(driver);
+		//f1= new  FlightPageObject(driver);
 	}
     
 
@@ -25,6 +25,7 @@ public class FlightBookingTest extends TestConfigurations {
     @Test
     public void testThatResultsAppearForAOneWayJourney() {
 
+    	f1= new  FlightPageObject(driver);
       f1.enterBoadringStation("Bangalore")//Entering from Station
       .enterDropStation("Delhi")//Entering to station
       .selectDate("December", "25") //selecting date
